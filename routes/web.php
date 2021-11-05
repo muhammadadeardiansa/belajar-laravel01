@@ -1,5 +1,8 @@
 <?php
 
+use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\ProdukController;
+use Illuminate\Routing\Route as RoutingRoute;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -24,3 +27,6 @@ Route::get('/test', function () {
 Route::get('/test2', function () {
     return view('testcontent2');
 });
+
+Route::get('/dashboard', [DashboardController::class, 'index']);
+Route::get('/produk', [ProdukController::class, 'index']);
