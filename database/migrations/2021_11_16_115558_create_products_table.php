@@ -19,7 +19,7 @@ class CreateProductsTable extends Migration
             $table->char('descriptions', 191);
             $table->char('stock', 191);
             $table->char('price', 191);
-            $table->integer('category_id', 10)->unsigned();
+            $table->Integer('category_id')->unsigned();
             $table->timestamps();
         });
     }
